@@ -38,7 +38,7 @@ export class HeroService {
       tap((hero: Hero) => this.log(`getHero => fetched hero id=${hero.id}`)),
       catchError(this.handleError<Hero>(`getHero => id=${id}`))
     );
-  }
+  } 
 
   /** PUT: update the hero on the server */
   updateHero(hero: Hero): Observable<any> {
@@ -53,6 +53,17 @@ export class HeroService {
     return this.http.post<Hero>(this.heroesUrl, hero, httpOptions).pipe(
       tap((hero: Hero) => this.log(`addHero => added hero id=${hero.id}`)),
       catchError(this.handleError<Hero>('addHero'))
+    );
+  }
+
+  /** DELETE: delete the hero from the server */
+  deleteHero (hero: Hero | number): Observable<Hero> {
+    const id = (typeof hero === 'number') ? hero : hero.id;
+    const url = `${this.heroesUrl}/${id}`;
+
+    return this.http.delete<Hero>(url, httpOptions).pipe(
+      tap(_ => this.log(`deleteHero => deleted hero id=${id}`)),
+      catchError(this.handleError<Hero>('deleteHero'))
     );
   }
 
