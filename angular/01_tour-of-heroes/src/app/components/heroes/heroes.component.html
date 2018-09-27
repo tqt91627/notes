@@ -1,12 +1,12 @@
 <h2>My Heroes</h2>
 
-<div>
+<div class="addHeroContainer">
   <label>Hero name:
     <input type="text" #heroName />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
   <button (click)="add(heroName.value); heroName.value=''">
-    add
+    ADD
   </button>
 </div>
 

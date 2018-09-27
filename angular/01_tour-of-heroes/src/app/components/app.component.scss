@@ -1,14 +1,4 @@
 /* AppComponent's private CSS styles */
-h1 {
-  font-size: 1.2em;
-  color: #999;
-  margin-bottom: 0;
-}
-h2 {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
-}
 nav a {
   padding: 5px 10px;
   text-decoration: none;
@@ -26,4 +16,21 @@ nav a:hover {
 }
 nav a.active {
   color: #039be5;
+}
+
+h1.animate {
+  animation-name: animateTitle;
+  animation-delay: 0s;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateTitle {
+  from {
+    font-variation-settings: "wdth" 0, "wght" 400;
+  }
+  to {
+    font-variation-settings: "wdth" 800, "wght" 800;
+  }
 }

@@ -1,0 +1,30 @@
+/* DashboardComponent's private CSS styles */
+h3 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.grid-item {
+  width: 20%;
+  vertical-align: middle
+}
+.module {
+  background-color: #607d8b;
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+  border-radius: 2px;
+}
+.module:hover {
+  background-color: #eee;
+  color: #607d8b;
+  cursor: pointer;
+}
