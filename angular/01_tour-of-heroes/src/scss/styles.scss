@@ -1,0 +1,82 @@
+@import 'variables';
+
+@font-face {
+  font-family: Gingham;
+  src: url(/assets/fonts/Gingham.ttf) format("truetype"),
+       url(/assets/fonts/Gingham.woff) format("woff"),
+       url(/assets/fonts/Gingham.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gingham;
+  src: url(/assets/fonts/Gingham.ttf) format("truetype"),
+       url(/assets/fonts/Gingham.woff) format("woff"),
+       url(/assets/fonts/Gingham.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  font-family: Gingham, Georgia;
+}
+
+/* Global Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: $color-white1;
+}
+h1 {
+  font-size: 3em;
+  font-variation-settings: "wdth" 800, "wght" 800;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5em;
+  font-variation-settings: "wdth" 600, "wght" 400;
+}
+h3 {
+  font-size: 2em;
+  font-variation-settings: "wdth" 600, "wght" 400;
+}
+h4 {
+  font-size: 1.5em;
+  font-variation-settings: "wdth" 400, "wght" 200;
+}
+
+body {
+  background-color: $color-blue3;
+  margin: 3em;
+}
+body, input[text], button {
+  color: $color-white1;
+}
+
+a {
+  cursor: pointer;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  border: solid 4px $color-orange1;
+}
+
+button {
+  background-color: $color-orange1;
+  color: #fff;
+  height: 40px;
+  font-size: 1.1em;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: $color-orange2;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+

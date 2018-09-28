@@ -1,10 +1,12 @@
+@import 'variables';
+
 /* HeroDetailComponent's private CSS styles */
 label {
   display: inline-block;
   width: 3em;
   margin: .5em 0;
-  color: #607D8B;
-  font-weight: 500;
+  color: $color-orange2;
+  font-variation-settings: "wdth" 400, "wght" 500;
 }
 .buttons-container {
   display: flex;

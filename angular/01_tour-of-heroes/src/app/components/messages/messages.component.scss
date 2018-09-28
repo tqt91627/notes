@@ -1,7 +1,11 @@
+@import 'variables';
+
 /* MessagesComponent's private CSS styles */
 h2 {
-  color: red;
-  font-weight: lighter;
+  color: $color-orange2;
+}
+p {
+  color: $color-gray1;
 }
 button.clear {
   margin-bottom: 15px;
